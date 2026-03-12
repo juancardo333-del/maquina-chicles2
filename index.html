@@ -1,53 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
-
-<meta charset="UTF-8">
-<title>Máquina de Chicles</title>
-
+<title>Thinking and Learning Quiz</title>
 <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
 
-<h1>🍬 Máquina de Preguntas</h1>
+<div class="container">
 
-<div class="game">
+<h1>Thinking & Learning Quiz</h1>
 
-<div id="coins"></div>
+<p>Score: <span id="score">0</span></p>
+<p>Time: <span id="time">15</span></p>
 
-<div class="machineArea">
-
-<img src="maquina.png" class="machine">
-
-<!-- bolas dentro del vidrio -->
-<div class="glass">
-
-<div class="ball red"></div>
-<div class="ball blue"></div>
-<div class="ball green"></div>
-<div class="ball yellow"></div>
-<div class="ball purple"></div>
-<div class="ball orange"></div>
-
-</div>
-
-<!-- bola que sale -->
-<div id="gum" class="gum"></div>
-
-</div>
-
-</div>
-
-<div id="questionBox">
-
-<h2 id="question"></h2>
+<h2 id="question">Press Start to begin</h2>
 
 <div id="answers"></div>
 
-<p id="result"></p>
+<button onclick="startGame()">Start Game</button>
 
 </div>
 
