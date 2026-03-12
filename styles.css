@@ -1,127 +1,48 @@
 body{
 
 font-family:Arial;
-text-align:center;
-background:#f0f0f0;
-
-}
-
-.game{
-
+background:linear-gradient(135deg,#1e3c72,#2a5298);
 display:flex;
 justify-content:center;
 align-items:center;
-gap:100px;
-margin-top:40px;
+height:100vh;
+margin:0;
+color:white;
 
 }
 
-#coins{
+.container{
 
-display:grid;
-grid-template-columns:repeat(4,60px);
-gap:10px;
-
-}
-
-.coin{
-
-width:60px;
-cursor:pointer;
-
-}
-
-.machineArea{
-
-position:relative;
-
-}
-
-.machine{
-
-width:260px;
-
-}
-
-/* vidrio */
-
-.glass{
-
-position:absolute;
-top:30px;
-left:40px;
-width:180px;
-height:160px;
-
-display:flex;
-flex-wrap:wrap;
-gap:6px;
-justify-content:center;
-align-content:center;
-
-}
-
-/* bolas */
-
-.ball{
-
-width:18px;
-height:18px;
-border-radius:50%;
-
-}
-
-.red{background:red;}
-.blue{background:blue;}
-.green{background:green;}
-.yellow{background:gold;}
-.purple{background:purple;}
-.orange{background:orange;}
-
-/* bola que sale */
-
-.gum{
-
-width:32px;
-height:32px;
-border-radius:50%;
-
-position:absolute;
-bottom:25px;
-left:115px;
-
-display:none;
-cursor:pointer;
+background:white;
+color:black;
+padding:30px;
+border-radius:15px;
+text-align:center;
+width:400px;
 
 }
 
 button{
 
+padding:10px;
+margin:10px;
+border:none;
+border-radius:8px;
+background:#2a5298;
+color:white;
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#1e3c72;
+
+}
+
+#answers button{
+
 display:block;
-margin:10px auto;
-padding:10px 20px;
-font-size:16px;
-
-}
-
-/* animación bola */
-
-.drop{
-animation:dropBall 0.6s ease;
-}
-
-@keyframes dropBall{
-
-0%{
-transform:translateY(-40px);
-}
-
-70%{
-transform:translateY(5px);
-}
-
-100%{
-transform:translateY(0);
-}
+width:100%;
 
 }
